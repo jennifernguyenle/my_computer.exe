@@ -1,5 +1,5 @@
 # How to Talk to My Computer
-1. First, say hello!
+1. First, be polite and say hello!
 2. Use complete sentences and proper punctuation, we are professionals!
 3. Talk to my computer!
 
