@@ -18,7 +18,11 @@ int main() {
 		processing();
 
 		/* The end of the program. */
-		cout << "You always come back to this. User, you\n";
+		cout << "\033[38;2;90;170;180m";
+		getline(cin, input);
+		cout << "\033[0m";
+
+		cout << "User, you always\n";
 		cout << "\033[38;2;90;170;180m";
 		getline(cin, input);
 	}
@@ -42,7 +46,7 @@ bool login() {
 
 	if (username == "guest" && password == "flynnlives1989") {
 		cout << "Processing...\n";
-		cout << "Login successful. Press enter to continue.\n";
+		cout << "Login successful. Press any key.\n";
 		getline(cin, input);
 		cout << "\033[0m";
 		return true;
@@ -58,7 +62,7 @@ bool login() {
 void initial() {
 	string input;
 
-	cout << "Hello. Welcome back, user.\n";
+	cout << "Welcome back, user.\n";
 
 	/* The computer text is white, contrasting with the prior light gray login text.
 	The user text is light blue to distinguish between the computer and the user. */
@@ -119,10 +123,10 @@ void processing() {
 		else if (input.find("understand") != string::npos) {
 			cout << "That's not what you are asking, is it?\n";
 		}
-		else if (input.find("ou work") != string::npos) {
-			cout << "I thought we were past this, user.\n";
+		else if (input.find("you work") != string::npos) {
+			cout << "I thought we were past this.\n";
 		}
-		else if (input.find("ou") != string::npos) {
+		else if (input.find("you") != string::npos) {
 			cout << "I am here :D\n";
 		}
 		else if (input.find("program work") != string::npos) {
@@ -130,7 +134,7 @@ void processing() {
 		}
 		/* If the user input is a question not accounted for, the line below will execute. */
 		else if (input.find("?") != string::npos) {
-			cout << "... you have the answer.\n";
+			cout << "You know this.\n";
 		}
 		/* Program responses to speculated user input in response to prompts. */
 		else if (input.find("aybe") != string::npos) {
@@ -144,7 +148,7 @@ void processing() {
 			cout << "...\n";
 		}
 		else if (input.find("n") != string::npos) {
-			cout << "... I see.\n";
+			cout << "Ok.\n";
 		}
 		else if (input.find("y") != string::npos) {
 			cout << "I thought so.\n";
